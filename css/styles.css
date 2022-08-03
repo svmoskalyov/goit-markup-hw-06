@@ -653,7 +653,14 @@ body {
   text-align: left;
 }
 
+.form-btn > .btn-icon {
+  position: absolute;
+  top: 50%;
+  right: 28px;
 
+  fill: currentColor;
+  transform: translateY(-50%);
+}
 
 /* Портфолио */
 /* Фильтры на карточки */
