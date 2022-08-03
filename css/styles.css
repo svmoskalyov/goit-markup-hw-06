@@ -353,7 +353,6 @@ body {
   fill: var(--accent-color);
 }
 
-
 .modal-title {
   margin: 0;
   margin-bottom: 12px;
@@ -394,6 +393,10 @@ body {
   position: absolute;
   top: 50%;
   left: 12px;
+}
+
+.modal-field:focus-within .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-comment {
