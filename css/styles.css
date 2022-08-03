@@ -413,13 +413,28 @@ body {
 .modal-field-checkbox {
   display: inline-block;
   margin-bottom: 30px;
+  width: 430px;
+  height: 24px;
+  padding-left: 25px;
+
+  text-align: left;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   color: var(--text-secondory-color);
+
+  outline: 2px solid tomato;
 }
 
-/* .modal-input-checkbox {
-} */
+.modal-input-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .modal-btn {
   padding: 0;
