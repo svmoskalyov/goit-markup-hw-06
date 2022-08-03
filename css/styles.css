@@ -595,7 +595,8 @@ body {
   margin-left: 70px;
 }
 
-.page-footer .social-title {
+.page-footer .social-title,
+.page-footer .form-title {
   margin-top: 12px;
   margin-bottom: 20px;
 
