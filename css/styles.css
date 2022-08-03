@@ -330,8 +330,13 @@ body {
   padding: 0;
 
   color: var(--text-white-color);
+  background-color: var(--bg-body-color);
   border: 1px solid var(--bg-icon-color);
   border-radius: 50%;
+
+  transition: fill 250ms var(--timing-function);
+
+  cursor: pointer;
 }
 
 .modal-icon-close {
@@ -341,9 +346,13 @@ body {
 
   height: 100%;
   width: 100%;
-
-  fill: currentColor;
 }
+
+.modal-button-close:hover,
+.modal-button-close:focus {
+  fill: var(--accent-color);
+}
+
 
 .modal-title {
   margin: 0;
