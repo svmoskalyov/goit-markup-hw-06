@@ -294,16 +294,16 @@ body {
   transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 /* Модальное окно */
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
-}
+} */
 
 .modal {
   position: relative;
@@ -438,6 +438,10 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.modal-input-checkbox:focus ~ .icon-check {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .icon-check {
