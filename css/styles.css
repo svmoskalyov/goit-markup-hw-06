@@ -464,8 +464,7 @@ body {
 
   border-radius: 4px;
 
-  /* transition: fill 250ms var(--timing-function),
-  background-color 250ms var(--timing-function); */
+  transition: background-color 250ms var(--timing-function);
 }
 
 .modal-input-checkbox:checked ~ .icon-check-ok {
