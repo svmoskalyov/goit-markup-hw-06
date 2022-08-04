@@ -6,6 +6,7 @@
   Фон футера --bg-hero-color: #2f303a;
   Фон иконки --bg-icon-color: #afb1b8;
   Фон иконки в футоре --bg-icon-footer-color: rgba(255, 255, 255, 0.1);
+  Фон кнопки на модальном окне при наведении --bg-btn-modal-color: #188CE8;
   Цвет основного текста --text-primary-color: #212121;
   Цвет вторичного текста --text-secondory-color: #757575;
   Цвет текста логотипа в хедере --text-logo-header-color: #000;
@@ -21,6 +22,7 @@
   --bg-footer-color: #2f303a;
   --bg-icon-color: #afb1b8;
   --bg-icon-footer-color: rgba(255, 255, 255, 0.1);
+  --bg-btn-modal-color: #188CE8;
   --text-primary-color: #212121;
   --text-secondory-color: #757575;
   --text-logo-header-color: #000;
@@ -477,6 +479,13 @@ body {
   height: 50px;
 
   color: var(--text-white-color);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+background: var(--bg-btn-modal-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 /* Особенности */
