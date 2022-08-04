@@ -394,7 +394,7 @@ body {
   top: 50%;
   left: 12px;
 
-  /* transition: fill 250ms var(--timing-function); */
+  transition: fill 250ms var(--timing-function);
 }
 
 .modal-field:focus-within .modal-icon {
