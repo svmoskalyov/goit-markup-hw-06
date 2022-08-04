@@ -393,6 +393,8 @@ body {
   position: absolute;
   top: 50%;
   left: 12px;
+
+  /* transition: fill 250ms var(--timing-function); */
 }
 
 .modal-field:focus-within .modal-icon {
@@ -410,7 +412,9 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
+/* Чекбокс */
 .modal-field-checkbox {
+  position: relative;
   display: inline-block;
   margin-bottom: 30px;
   width: 430px;
@@ -421,8 +425,6 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: var(--text-secondory-color);
-
-  outline: 2px solid tomato;
 }
 
 .modal-input-checkbox {
@@ -434,6 +436,40 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.icon-check {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--text-primary-color);
+  border-radius: 4px;
+}
+
+.icon-check-ok {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translateY(-50%);
+
+  fill: var(--text-white-color);
+
+  border-radius: 4px;
+
+  /* transition: fill 250ms var(--timing-function),
+  background-color 250ms var(--timing-function); */
+}
+
+.modal-input-checkbox:checked ~ .icon-check-ok {
+  background-color: var(--accent-color);
 }
 
 .modal-btn {
